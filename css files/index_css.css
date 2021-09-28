@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #212121;
+}
+
+header {
+    width: 100%;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+header .menu_icon img {
+    float: left;
+    color: white;
+    padding: 10px 20px;
+}
+
+header .youtube_logo img {
+    float: left;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+}
+
+header .youtube_name {
+    float: left;
+    letter-spacing: -1px;
+    padding-top: 10px;
+    font-family: sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+header .search_bar {
+    position: relative;
+    float: left;
+    margin-top: 5px;
+    left: 10%;
+}
+
+header .search_bar input {
+    color: white;
+    float: left;
+    height: 12px;
+    border: 0.01px solid grey;
+    border-right: none;
+    background-color: rgba(0, 0, 0, 0.534);
+    padding: 10px;
+}
+
+@media screen and (min-width: 480px) {
+    header .search_bar {
+        width: 50%;
+    }
+    header .search_bar input {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    header .search_bar {
+        width: 38%;
+    }
+    header .search_bar input {
+        width: 50%;
+    }
+}
+
+header .search_bar input::placeholder {
+    color: gray;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+header .search_bar .search_icon {
+    float: left;
+    width: 40px;
+    padding: 4.8px;
+    padding-left: 20px;
+    background-color: #333;
+}
+
+header .short_search_bar img {
+    float: left;
+    display: none;
+    padding-left: 5%;
+    padding-top: 10px;
+}
+
+header .trailer-icons img {
+    float: right;
+    padding-right: 15px;
+    padding-top: 10px;
+}
+
+header .search_bar .voice-icon img {
+    float: left;
+    padding-left: 15px;
+    padding-top: 6px;
+}
+
+header .sign-in-button {
+    float: right;
+    padding-top: 10px;
+}
+
+header .sign-in-button button {
+    background-color: transparent;
+    padding: 5px;
+    margin-right: 10px;
+    letter-spacing: 1.0;
+    width: 60px;
+    color: #0077ef;
+    border: 1px solid #0077ef;
+}
+
+header .trailer-icons .trailer-voice-icon {
+    display: none;
+}
+
+@media screen and (max-width: 750px) {
+    header .search_bar {
+        display: none;
+    }
+    header .short_search_bar img {
+        float: right;
+        display: block;
+        padding-right: 15px;
+        padding-top: 14px;
+    }
+    header .trailer-icons .trailer-voice-icon {
+        display: block;
+    }
+}
+
+
+.video-section{
+    justify-content: space-between;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    row-gap: 30px;
+    color: #fff;
+}
+
+.video-section .video-element img{
+    width: 90%;
+}
+
+.video-section .video-element .short-video-description .first-row{
+    display: inline-block;
+}
+
+.video-section .video-element .short-video-description .first-row .circle-icon{
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #0077ef;
+    margin-right: 15px;
+    background: url("https://avatars.githubusercontent.com/u/66327336?v=4");
+}
+
+.video-section .video-element .short-video-description .second-row{
+    padding-left: 55px;
+    padding-top: 3px;
+}
+
+.video-section .video-element .short-video-description .third-row{
+    display: inline-block;
+    padding-top: 3px;
+}
+
+.video-section .video-element .short-video-description .third-row .views{
+    padding-left: 55px;
+    float: left;
+}
+
+.video-section .video-element .short-video-description .third-row .time-posting{
+    float: left;
+}
